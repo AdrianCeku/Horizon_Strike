@@ -1,0 +1,38 @@
+:root{
+    --aspect-width: 17;
+    --aspect-height: 13;
+}
+body {
+    background-image: url(./game/assets/backgrounds/blue_clouds_1.png), 
+        url(./game/assets/backgrounds/blue_clouds_2.png), 
+        url(./game/assets/backgrounds/blue_clouds_3.png), 
+        url(./game/assets/backgrounds/blue_clouds_4.png),
+        url(./game/assets/backgrounds/blue_clouds_1.png), 
+        url(./game/assets/backgrounds/blue_clouds_2.png), 
+        url(./game/assets/backgrounds/blue_clouds_3.png), 
+        url(./game/assets/backgrounds/blue_clouds_3.png), 
+        url(./game/assets/backgrounds/blue_clouds_4.png);
+
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh, 33.333vw 33.333vh;
+    background-position: 0vw 0vh, 33.33vw 0vh, 66.66vw 0vh, 0vw 33.33vh, 33.33vw 33.33vh, 66.66vw 33.33vh, 0vw 66.66vh, 33.33vw 66.66vh, 66.66vw 66.66vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#game-div{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+#game{
+    width: calc(98vh/var(--aspect-height) * var(--aspect-width));
+    height: calc(98vh/var(--aspect-height) * var(--aspect-height));
+    border-radius: 1.5%;
+    border : 1px solid white;
+    box-shadow: 0 0 3vh rgb(62, 62, 191);
+}
